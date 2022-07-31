@@ -1,0 +1,73 @@
+{
+  "name": "@yungerdev/theme",
+  "description": "A Mantine theme object based on the Nord palette.",
+  "author": "yunger <hello@yunger.dev> (https://yunger.dev/)",
+  "version": "0.0.0",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "mantine",
+    "nord"
+  ],
+  "homepage": "https://github.com/yungerdev/theme",
+  "bugs": {
+    "url": "https://github.com/yungerdev/theme/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yungerdev/theme.git"
+  },
+  "main": "dist/index.js",
+  "module": "dist/theme.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "trailingComma": "es5"
+  },
+  "size-limit": [
+    {
+      "path": "dist/theme.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/theme.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "peerDependencies": {
+    "@mantine/core": ">=5.0.0"
+  },
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^8.0.0",
+    "husky": "^8.0.1",
+    "size-limit": "^8.0.0",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  }
+}
