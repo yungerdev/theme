@@ -37,7 +37,8 @@
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "analyze": "size-limit --why",
+    "release": "np --no-yarn --no-tests --no-2fa"
   },
   "husky": {
     "hooks": {
@@ -65,6 +66,7 @@
   "devDependencies": {
     "@size-limit/preset-small-lib": "^8.0.0",
     "husky": "^8.0.1",
+    "np": "^7.6.2",
     "size-limit": "^8.0.0",
     "tsdx": "^0.14.1",
     "tslib": "^2.4.0",
