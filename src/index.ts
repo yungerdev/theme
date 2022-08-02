@@ -79,6 +79,8 @@ export const colors = {
 	gray,
 }
 
+export * from "./styles/TextSelection";
+
 declare module "@mantine/core" {
 	export interface MantineThemeColorsOverride {
 		colors: Record<MantineCustomColors | "dark" | "gray", Tuple<string, 10>>;
