@@ -28,6 +28,23 @@ function Demo() {
 }
 ```
 
+Additional styles can be provided under the `MantineProvider`
+
+```tsx
+import { MantineProvider } from "@mantine/core";
+import { theme, Scrollbar, TextSelection } from "@yungerdev/theme";
+
+function Demo() {
+  return (
+    <MantineProvider theme={theme} withGlobalStyles withNormalizeCSS>
+      <Scrollbar />
+      <TextSelection />
+      <App />
+    </MantineProvider>
+  );
+}
+```
+
 With a custom `colorScheme` and `ColorSchemeProvider`
 
 ```tsx
