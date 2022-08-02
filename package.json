@@ -2,7 +2,7 @@
   "name": "@yungerdev/theme",
   "description": "A Mantine theme object based on the Nord palette.",
   "author": "yunger <hello@yunger.dev> (https://yunger.dev/)",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "keywords": [
     "theme",
