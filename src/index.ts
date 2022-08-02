@@ -79,6 +79,7 @@ export const colors = {
 	gray,
 }
 
+export * from "./styles/Scrollbar";
 export * from "./styles/TextSelection";
 
 declare module "@mantine/core" {
